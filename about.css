@@ -1,0 +1,130 @@
+:root {
+    --background: #111111;
+    --white: #ffffff;
+    --grey: #191919;
+    --yellow: rgb(236, 236, 76);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--background);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #11101B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav_bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav_bar ul li a {
+    display: block;
+    color: var(--white);
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+
+}
+
+.nav_bar ul li a:hover {
+    color: #11101B;
+    background: var(--yellow);
+}
+
+.nav_bar ul li a.active {
+    color: #11101B;
+    background: var(--yellow);
+}
+
+.about_us_container {
+    position: relative;
+    z-index: 1000;
+    margin: 4em auto 0;
+    max-width: 90%;
+    display: grid;
+    gap: 4em;
+    height: 100vh;
+
+}
+
+.about_us_container_content {
+    display: flex;
+}
+
+.about_us_container_text {
+    color: var(--white);
+    width: clamp(45ch, 50%, 60ch);
+    font-size: 20px;
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+    position: relative;
+    top: 40%;
+}
+
+.about_us_container_image {
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.compare_photos_title {
+    color: var(--white);
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.compare_photos_subtitle {
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    padding: 5px 0 10px 0;
+
+}
+
+.compare_photos_column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.compare_photos_row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

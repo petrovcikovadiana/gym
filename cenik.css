@@ -1,0 +1,167 @@
+:root {
+    --background: #111111;
+    --white: #ffffff;
+    --grey: #191919;
+    --yellow: rgb(236, 236, 76);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--background);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #11101B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 3;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav_bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav_bar ul li a {
+    display: block;
+    color: var(--white);
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.nav_bar ul li a:hover {
+    color: #11101B;
+    background: var(--yellow);
+}
+
+.nav_bar ul li a.active {
+    color: #11101B;
+    background: var(--yellow);
+}
+
+.section_pricing {
+    background-color: var(--background);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div.lessons_title {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.grid {
+    display: grid;
+    width: 114em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.grid_two {
+    display: grid;
+    width: 78em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.grid-item {
+    background-color: var(--yellow);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 15px;
+
+}
+
+.grid-item-lessons {
+    background-color: var(--white);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.5%);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 3rem;
+}
+
+.card-header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--background);
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: var(--background);
+    margin-bottom: 2.5rem;
+}
+
+.card-description {
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.card-duration {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.card-pricing {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px 0;
+}
