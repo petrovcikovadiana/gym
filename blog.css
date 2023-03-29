@@ -12,11 +12,6 @@
     box-sizing: border-box;
 }
 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-
 body {
     background: var(--background);
 }
@@ -47,16 +42,6 @@ section span {
     color: var(--yellow);
 }
 
-section video {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-
 section h2 {
     position: relative;
     font-size: 3em;
@@ -78,7 +63,7 @@ section P {
 }
 
 .logo {
-    font-size: 3em;
+    font-size: 30px;
     font-weight: bold;
     color: var(--white);
 }
@@ -145,6 +130,17 @@ img {
     padding: 20px;
 }
 
+.debug_button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: aqua;
+}
+
+.debug * {
+    background: rgb(0 100 0 / 0.05) !important;
+}
+
 .grid {
     display: grid;
     width: 114em;
@@ -203,7 +199,7 @@ img {
 
 .container_blog h2 {
     letter-spacing: 1px;
-    font-size: 50px;
+    font-size: 45px;
     color: var(--white);
     text-align: center;
     margin-top: 110px;
@@ -214,11 +210,10 @@ img {
 }
 
 .blog_post {
-    width: 100%;
+    width: 73%;
     max-width: 98rem;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--grey);
-    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -226,50 +221,35 @@ img {
 }
 
 .blog_post_info {
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .blog_post_img {
-    min-width: 35rem;
-    max-width: 35rem;
-    height: 24rem;
-    position: relative;
+    min-width: 345px;
 }
 
 .blog_post_img img {
-    width: 100%;
-    height: 100%;
+    width: 350px;
     object-fit: cover;
     display: block;
     border-radius: 15px;
-
-}
-
-.blog_post_img img::before {
-    content: '';
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+    height: 240px;
 }
 
 .blog_post_date span {
     display: block;
     color: var(--yellow);
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 600;
-    margin: .5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .blog_post_title {
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem;
+    font-size: 25px;
+    margin: 1rem 0 1rem;
     text-transform: uppercase;
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
-
 }
 
 a .blog_post_title {
@@ -277,20 +257,21 @@ a .blog_post_title {
 }
 
 .blog_post_description {
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 14px;
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
 }
 
 .blog_post_cta {
     display: inline-block;
-    padding: 1rem 3rem;
+    padding: 0.5rem 1.5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 14px;
     color: var(--white);
     border-radius: 20px;
+    margin-top: 1rem;
     text-decoration: none;
     color: #11101B;
     background: var(--yellow);
@@ -315,12 +296,12 @@ ul {
     padding: 70px 0;
 }
 
-.footer-col {
+.footer_col {
     width: 33.3%;
     padding: 0 15px;
 }
 
-.footer-col h4 {
+.footer_col h4 {
     font-size: 18px;
     color: var(--white);
     margin-bottom: 35px;
@@ -328,7 +309,7 @@ ul {
     position: relative;
 }
 
-.footer-col h4::before {
+.footer_col h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -339,17 +320,17 @@ ul {
     width: 50px;
 }
 
-.footer-col ul li:not(:last-child) {
+.footer_col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.footer-col ul li {
+.footer_col ul li {
     color: var(--white);
     font-size: 16px;
 
 }
 
-.footer-col ul li a {
+.footer_col ul li a {
     font-size: 16px;
     color: var(--white);
     text-decoration: none;
@@ -358,7 +339,7 @@ ul {
     display: block;
 }
 
-.social-media {
+.social_media {
     width: 24px;
     height: 24px;
     margin-right: 15px;
@@ -375,7 +356,7 @@ ul {
         display: none;
     }
 
-    .footer-col {
+    .footer_col {
         width: 100%;
     }
 
@@ -438,7 +419,7 @@ ul {
         display: none;
     }
 
-    .footer-col {
+    .footer_col {
         width: 50%;
         margin-bottom: 30px;
     }
