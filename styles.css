@@ -112,8 +112,8 @@ header {
 }
 
 .home_left_column p {
-    margin-left: 105px;
-    width: clamp(43ch, 50%, 60ch);
+    margin-left: 65px;
+    width: clamp(45ch, 50%, 60ch);
     font-size: 18px;
     margin-top: 5%;
     color: var(--white);
