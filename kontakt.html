@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="styles.css">
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 <body>
     <!-- header section start      -->
     <header>
-        <div class="logo">PETR HEIN</div>
+        <div class="logo">PETR <span>HEIN</span> </div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -35,38 +35,11 @@
         </nav>
     </header>
     <!-- header section end      -->
+    <button class="debug_button" onclick="myFunction()">Toggle debug mode</button>
 
     <!-- contact form start -->
-    <!-- <section class="section_form">
-        <form class="form">
-            <h2>KONTAKTUJ MĚ</h2>
-            <p type="Jméno"><input placeholder="Napište své jméno"></input></p>
-            <p type="Email"><input placeholder="Napište svůj email"> </input></p>
-            <p type="Telefon"><input placeholder="Napište svůj telefon"> </input></p>
-            <p type="Zpráva " class="full-width"><input placeholder="Napište zprávu"></input></p>
-            <textarea name="message" id="message" rows="5"></textarea>
-            <button>ODESLAT</button>
-
-        </form>
-    </section> -->
-    <!-- contact form end -->
-
-    <!-- contact info start -->
-    <!-- <div class="post-content">
 
 
-        <div class="text">🔆 Email </div>
-        <div class="text_bottom">example@gmail.com</div>
-        <div class="text">🔆 Tel </div>
-        <div class="text_bottom">555 555 555</div>
-        <div class="text">
-            🔆
-            Adresa
-        </div>
-        <div class="text">Aquacentrum Teplice</div>
-
-    </div> -->
-    <!-- contact info end -->
     <div class="contact_form">
         <div class="container">
             <div class="contact-box">
@@ -89,7 +62,7 @@
     <footer class="footer">
         <div class="container_footer">
             <div class="row_footer">
-                <div class="footer-col">
+                <div class="footer_col">
                     <h4>Fitness</h4>
                     <ul>
                         <li><a href="index.html">Domů</a></li>
@@ -98,7 +71,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-col">
+                <div class="footer_col">
                     <h4>Kontakt</h4>
                     <ul>
                         <li>example@gmail.com</li>
@@ -107,12 +80,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer_col">
                     <h4>Sleduj mě</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com" target="_blank" title="instagram"><img class="social-media"
+                        <a href="https://www.instagram.com" target="_blank" title="instagram"><img class="social_media"
                                 src="images/instagram.svg" alt=""></a>
-                        <a href="https://www.facebook.com" target="_blank" title="facebook"><img class="social-media"
+                        <a href="https://www.facebook.com" target="_blank" title="facebook"><img class="social_media"
                                 src="images/facebook.svg" alt=""></a>
                     </div>
                 </div>
@@ -129,6 +102,12 @@
             navBar.classList.toggle("active");
         }
         // hamburger menu end
+        // debug button start
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("debug");
+        }
+        // debug button end
     </script>
 
 </body>
