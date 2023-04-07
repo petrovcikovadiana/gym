@@ -70,7 +70,7 @@ header {
 
 .home_page {
     background-color: var(--background);
-    height: 50vw;
+    height: 600px;
 }
 
 .some-page-wrapper {
@@ -86,7 +86,6 @@ header {
 .home_left_column {
     background-color: var(--background);
     height: 600px;
-    transform: translate(10px, 14px);
 }
 
 .home_left_column span {
@@ -675,6 +674,10 @@ textarea {
         max-width: 390px;
     }
 
+    .logo {
+        font-size: 1.5em;
+    }
+
     .footer_col {
         width: 100%;
     }
@@ -696,7 +699,8 @@ textarea {
     }
 
     .home_left_column p {
-        font-size: 13px;
+        font-size: 14px;
+        margin: 20px 48px;
     }
 
     .grid {
@@ -802,9 +806,7 @@ textarea {
         height: 100vw;
     }
 
-    .home_page {
-        height: 600px;
-    }
+
 
     .rows {
         display: block;
@@ -887,10 +889,6 @@ textarea {
         width: 35em;
     }
 
-    .home_page {
-        height: 600px;
-    }
-
     .left {
         display: none;
     }
@@ -906,9 +904,6 @@ textarea {
     .blog_post {
         max-width: 70rem;
     }
-
-
-
 }
 
 
@@ -926,17 +921,9 @@ textarea {
         display: none;
     }
 
-    .home_left_column p {
-        margin-left: 16px;
-    }
-
     .blog_post {
         max-width: 80rem;
     }
-
-
-
-
 }
 
 @media only screen and (max-width:1320px) {
